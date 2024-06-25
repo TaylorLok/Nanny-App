@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class UserType extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['title', 'description'];
+
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 }
