@@ -11,6 +11,13 @@
 </head>
 
 <body>
+<style>
+    body {
+        /* background: url('{{ asset('storage/logos/original_home.png') }}') no-repeat center center fixed; */
+        background-size: cover;
+        background-color: #eae7dc;
+    }
+</style>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">Nanny Logo</a>
@@ -80,15 +87,7 @@
     </div>
 
     <br><br>
-    <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-        <div class="text-center text-sm sm:text-left">
-            &nbsp;
-        </div>
-        <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-            <footer class="blockquote-footer">&copy; <?php echo date('Y'); ?> <b>Crafted by Taylor Lokombe</b> in
-                Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})</footer>
-        </div>
-    </div>
+    @include('layouts.footer')
 </body>
 
 </html>

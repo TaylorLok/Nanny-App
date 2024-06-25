@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    body {
+        /* background: url('{{ asset('storage/logos/original_home.png') }}') no-repeat center center fixed; */
+        background-size: cover;
+        background-color: #eae7dc;
+    }
+</style>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -70,4 +77,5 @@
         </div>
     </div>
 </div>
+@include('layouts.footer')
 @endsection
